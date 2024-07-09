@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda de contactos</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Gestión de Contactos</h1>
+        <form id="contactoForm">
+            <input type="hidden" id="contactoId">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" required>
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" required>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+   
+    <table id="contactosTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Telefono</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
